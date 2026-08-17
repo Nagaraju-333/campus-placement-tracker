@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="New Placement Application">8697674d472ac350d4a3eb02d16d4346</sc_cat_item>
+        <sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 15:46:39</sys_created_on>
+        <sys_id>8dde6b0d476ac350d4a3eb02d16d4305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.New Placement Application</sys_name>
+        <sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name>sc_cat_item_category_8dde6b0d476ac350d4a3eb02d16d4305</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 15:46:39</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</application>
+        <file_path/>
+        <instance_id>29dd790ffb994f941feef633beefdc37</instance_id>
+        <instance_name>dev402520</instance_name>
+        <name>sc_cat_item_category_8dde6b0d476ac350d4a3eb02d16d4305</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="New Placement Application">8697674d472ac350d4a3eb02d16d4346</sc_cat_item><sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 15:46:39</sys_created_on><sys_id>8dde6b0d476ac350d4a3eb02d16d4305</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Can We Help You?.New Placement Application</sys_name><sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package><sys_policy/><sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope><sys_update_name>sc_cat_item_category_8dde6b0d476ac350d4a3eb02d16d4305</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 15:46:39</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1619260218</payload_hash>
+        <record_name>Can We Help You?.New Placement Application</record_name>
+        <reverted_from/>
+        <source>fe892f20476acf10d4a3eb02d16d431e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 15:46:40</sys_created_on>
+        <sys_id>5dde6b0d476ac350d4a3eb02d16d434b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fd29afc100000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 15:46:40</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>51de6b0de46ac350cbacec3b99cc7f3e</update_guid>
+        <update_guid_history>51de6b0de46ac350cbacec3b99cc7f3e:-1619260218</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Can We Help You?.New Placement Application">220f234d476ac350d4a3eb02d16d43b0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 15:47:34</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>21aea07ca0e1429ea7378751f0f870a1</sys_id>
+        <sys_metadata>8dde6b0d476ac350d4a3eb02d16d4305</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.New Placement Application</sys_name>
+        <sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_scope_delete display_value="">63e74e5002e34b38b361c42201304440</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_8dde6b0d476ac350d4a3eb02d16d4305</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_8dde6b0d476ac350d4a3eb02d16d4305">5dde6b0d476ac350d4a3eb02d16d434b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 15:47:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="0ce5ec3c47220350d4a3eb02d16d4319" extends="task" label="Placement Application" max_length="40" name="x_2184285_campus_p_placement_application" type="collection">
+        <element label="Target Company" max_length="32" name="target_company" reference="x_2184285_campus_p_company_drive" type="reference"/>
+        <element label="Applying Student" max_length="32" name="applying_student" reference="x_2184285_campus_p_student_profile" type="reference"/>
+    </element>
+</database>

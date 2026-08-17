@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=80408000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automate the placement status</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>automate_student_placement</internal_name>
+        <label_cache>[{"name":"Updated_1.current.applying_student","label":"Trigger - Record Updated➛Placement Application Record➛Applying Student","reference":"x_2184285_campus_p_student_profile","reference_display":"Student Profile","type":"reference","base_type":"reference","parent_table_name":"x_2184285_campus_p_placement_application","column_name":"applying_student","usedInstances":{"ca8f9958-6b8a-46cf-b75b-3b676f8782dd":["record"],"6e27cd8c-3720-44a5-b41a-f8242154fb46":["record"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Placement Application Record","reference":"x_2184285_campus_p_placement_application","reference_display":"Placement Application","type":"reference","base_type":"reference","usedInstances":{"1030f242-90f8-47aa-984e-b0af82eae09f":["record"],"6e27cd8c-3720-44a5-b41a-f8242154fb46":["record"]},"attributes":{}},{"name":"Updated_1.current.state","label":"Trigger - Record Updated➛Placement Application Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_2184285_campus_p_placement_application","column_name":"state","choices":[{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"Pending"}},"sequence":-5.0,"label":"Pending","used":false,"image":"","selected":false,"rawLabel":"Pending","missing":false,"reference":false,"value":"-5"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"Open"}},"sequence":1.0,"label":"Open","used":false,"image":"","selected":false,"rawLabel":"Open","missing":false,"reference":false,"value":"1"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"Work in Progress"}},"sequence":2.0,"label":"Work in Progress","used":false,"image":"","selected":false,"rawLabel":"Work in Progress","missing":false,"reference":false,"value":"2"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"Closed Complete"}},"sequence":3.0,"label":"Closed Complete","used":false,"image":"","selected":false,"rawLabel":"Closed Complete","missing":false,"reference":false,"value":"3"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"Closed Incomplete"}},"sequence":4.0,"label":"Closed Incomplete","used":false,"image":"","selected":false,"rawLabel":"Closed Incomplete","missing":false,"reference":false,"value":"4"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"Closed Skipped"}},"sequence":5.0,"label":"Closed Skipped","used":false,"image":"","selected":false,"rawLabel":"Closed Skipped","missing":false,"reference":false,"value":"7"}],"usedInstances":{}}]</label_cache>
+        <master_snapshot>3b27727047e24350d4a3eb02d16d438a</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Automate Student Placement</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>87c2e3c1472ac350d4a3eb02d16d43b7</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 16:33:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e7007ab047a24350d4a3eb02d16d4303</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Automate Student Placement</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name>sys_hub_flow_e7007ab047a24350d4a3eb02d16d4303</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:05</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>dbc2e3c1472ac350d4a3eb02d16d43f9</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e7007ab047a24350d4a3eb02d16d4303"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e7007ab047a24350d4a3eb02d16d4303"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_2184285_campus_p_placement_application">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 14:54:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>87c2e3c1472ac350d4a3eb02d16d43b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:05</sys_updated_on>
+        <table>x_2184285_campus_p_placement_application</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>e7007ab047a24350d4a3eb02d16d4303</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 14:54:05</sys_created_on>
+        <sys_id>cbc2e3c1472ac350d4a3eb02d16d43b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:05</sys_updated_on>
+        <trigger display_value="">87c2e3c1472ac350d4a3eb02d16d43b7</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e7007ab047a24350d4a3eb02d16d4303^sys_idNOT INcbc2e3c1472ac350d4a3eb02d16d43b8"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e7007ab047a24350d4a3eb02d16d4303"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e7007ab047a24350d4a3eb02d16d4303^sys_idNOT INe7007ab047a24350d4a3eb02d16d4308"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e7007ab047a24350d4a3eb02d16d4303</id>
+        <name>Automate Student Placement</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 16:33:54</sys_created_on>
+        <sys_id>e7007ab047a24350d4a3eb02d16d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 16:33:54</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e7007ab047a24350d4a3eb02d16d4308"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e7007ab047a24350d4a3eb02d16d4303^sys_idNOT IN60e0f63447a24350d4a3eb02d16d43ce,ace0f63447a24350d4a3eb02d16d43b5,d8e0363447a24350d4a3eb02d16d4367"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Automate Student Placement">e7007ab047a24350d4a3eb02d16d4303</model>
+        <model_id>e7007ab047a24350d4a3eb02d16d4303</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e7007ab047a24350d4a3eb02d16d4303</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 16:37:31</sys_created_on>
+        <sys_id>60e0f63447a24350d4a3eb02d16d43ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 16:37:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=60e0f63447a24350d4a3eb02d16d43ce"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Automate Student Placement">e7007ab047a24350d4a3eb02d16d4303</model>
+        <model_id>e7007ab047a24350d4a3eb02d16d4303</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e7007ab047a24350d4a3eb02d16d4303</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 16:37:31</sys_created_on>
+        <sys_id>ace0f63447a24350d4a3eb02d16d43b5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 17:05:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ace0f63447a24350d4a3eb02d16d43b5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Automate Student Placement">e7007ab047a24350d4a3eb02d16d4303</model>
+        <model_id>e7007ab047a24350d4a3eb02d16d4303</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e7007ab047a24350d4a3eb02d16d4303</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 16:37:30</sys_created_on>
+        <sys_id>d8e0363447a24350d4a3eb02d16d4367</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 17:05:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d8e0363447a24350d4a3eb02d16d4367"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e7007ab047a24350d4a3eb02d16d4303"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e7007ab047a24350d4a3eb02d16d4303"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e7007ab047a24350d4a3eb02d16d4303^sys_idNOT INa9013a3447a24350d4a3eb02d16d43d0"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Automate Student Placement">e7007ab047a24350d4a3eb02d16d4303</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 16:38:08</sys_created_on>
+        <sys_id>a9013a3447a24350d4a3eb02d16d43d0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:02</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e7007ab047a24350d4a3eb02d16d4303^sys_idNOT IN4b31630d47e6c350d4a3eb02d16d43df,7f82ab81472ac350d4a3eb02d16d43ad"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Automate Student Placement">e7007ab047a24350d4a3eb02d16d4303</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>50b0e279-96c7-4773-aba0-815d68310441</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 14:47:15</sys_created_on>
+        <sys_id>4b31630d47e6c350d4a3eb02d16d43df</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:24</sys_updated_on>
+        <ui_id>ca8f9958-6b8a-46cf-b75b-3b676f8782dd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy2rjMBT9laC1MbaThjS70lAY6LTQzmTTKUaRrlOB/Bg92mSC/32uLNkJbaek0E2YrKL70D3n+B77YUcEJ3MyAZ6k5+mUjdPxOEuSbDZJV9PxKs34mAKkJCIVLQErFbBacTw/U2ldYLf72XBqgOdpzKxSUJmYNo3cimqda2M5BtoWG7jQjaTbZejDCHsSkmMDmT88RqShCkcYUGS+e5U6FqOkK5BYeteDfA3abBt35jWzJeLKRR+8Dp2LkBl9W2AGmxycNIkIbAxUHBBIQaWGiJS0Qtq12pK5URYDCii/reR2qHgSlfFES7rR4g9OniSurgBkxoIIwzEPAvlwsaCG3uPNzFg16FULBtprwqGgVprLw5gvuG2MqCvfYuhK9t21tGV14xUhwwUHz8NqBAGN4+mQe1rF/VP9cteDvBJVJ0mgKGtG5XCixiixssbB2RGQ0Glc4ja4XWhU/Sy6ZoRSxmuJh7iQ9QvO1GJdxZQ53DGqSuMrjC+68JIq4Uh8x2uwuY2I3upLSbXeU0EN89/WIfHEAoW8U6GTIO82wTUzJRpzgaOeYQDugw502BT8905h27ZRMMzq7KNlZOf73TsYvzfNJs/S2SSbneWMlo3VedNbxclUCAlvDXMRTDW695WfNtARmHsD/ejW5n0OwUNvYteHvaMbnwgOOvsyB81OyUGBxslb6B/GGdyQZB++mg82qTOAPnACPi/mSWpDjdW/bJKMuduHtw74sPZzXjgCce+FKwGS63co9EaAEoEZyD2lV2YIydEyJIdPypc5Ip0m3e+EfPG/fFnax7+rvafRYQkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4b31630d47e6c350d4a3eb02d16d43df"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Automate Student Placement">e7007ab047a24350d4a3eb02d16d4303</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>9b4b4ba0-e11b-4a5b-807f-b7a54cb86f4e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 14:53:02</sys_created_on>
+        <sys_id>7f82ab81472ac350d4a3eb02d16d43ad</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:24</sys_updated_on>
+        <ui_id>6e27cd8c-3720-44a5-b41a-f8242154fb46</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWviQBT9KzLPEhKjYn0rFWGh20Ld9aVbwjhzowOTj50Pa1b873snmahocS30RTZv92vmnJN7ktctEZyMSR94GN1FQxZHcdwLw96oHy2G8SLq8ZgCRKRLcpoBdipgheIYr6m0LrHd/iw5NcCTKGBWKchNQMtSViJfJtpYjondDge40KWk1dzPYYathOQ4QMavb11SUoVXGFBkvD0pXYtR0gVIbH1pQZ6CNlXpYl4wmyGuRLTJRz858ZXOtwlWcMjBicIugY2BnAMCSanU0CUZzZF2oSoyNspiQgHlz7ms9h0rkZuGaEY3WvzBm/uh60sBmTEvwj5MvEBNOp1QQ2d4MjNW7fUqBAPdaMIhpVaah+Nc0/BcGlHkzYihC9lOF9Jm+VOjCNkfcPQ+rEYQUDqeDnlDK52tiveXFuRU5LUknqIsGJX7iBqjxMIaB2dLQEKtcYbb4HahVMVa1MMIJQuWEoMglcU73qnFMg8oc7gDVJUGU8xP6vScKuFIfMdjcHjXJbrSD5JqfaCCGia/rUPSEPMUklqFWoKk3gQ3zJQozT1etQYPfNf1LlgMLm0Yuzss1NGZBydskl406vdGg4TRrLQ6Kdv9d9xTIeHcBffeKZ1Z0/lpV1yBuXXFj3oXPubgjXGWezye7Tw1BW+LwZfZYnRLtvA0bt4X/3JD2Lv4vT3apNoA+sgJ+L5YQ1Ibaqz+ZcMw5vXx5xa43Pw5N1yBuXXDVIDk+gMSrRUgQ2QGkobUiR18sTP3xf2f4ss8EQ3D+rkhZ/w3P4y3v/b7EFw4CQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7f82ab81472ac350d4a3eb02d16d43ad"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e7007ab047a24350d4a3eb02d16d4303"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e7007ab047a24350d4a3eb02d16d4303^sys_idNOT IN0582e381472ac350d4a3eb02d16d43ad,b3102f4d47e6c350d4a3eb02d16d43e0"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">52c2a3c1472ac350d4a3eb02d16d4385</block>
+        <comment/>
+        <connected_to>50b0e279-96c7-4773-aba0-815d68310441</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Automate Student Placement">e7007ab047a24350d4a3eb02d16d4303</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 14:52:51</sys_created_on>
+        <sys_id>0582e381472ac350d4a3eb02d16d43ad</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:02</sys_updated_on>
+        <ui_id>9b4b4ba0-e11b-4a5b-807f-b7a54cb86f4e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dec2a3c1472ac350d4a3eb02d16d4380</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Automate Student Placement">e7007ab047a24350d4a3eb02d16d4303</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 14:42:24</sys_created_on>
+        <sys_id>b3102f4d47e6c350d4a3eb02d16d43e0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:02</sys_updated_on>
+        <ui_id>50b0e279-96c7-4773-aba0-815d68310441</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K0HPxvijCWveSkdhsK2wdn3ZirmWrhNtsuRJctIs5L/vyh9pWBMWRh/7Fp37dc7xIVtmWt+03t2bK+fkQrP5t8eISR0w+r1lUrA5qxKo0kue8jyb5VmSZO8u0nKWl2kmckDIWcQ01Eid3GghvTS66ICIrUC1oTCR1eSHKSemqtCioIqQrlGweTjZwJdSCYsDpwYsbfRo2Xz7V8lvGiwUlKhoz523Ui9o/Fzm4+D1SH3ysUNOawr3CHfjJWNFoJUmEcMnj1oQ/XkFymHEatACvLGbPWIRxK1Wz8BSak/rWGh+cvI37c6m09AYnNAc++L+WQzO9TBfGsnxtgkEe8RDqYYZblRb68+9juA5VtAqP3pOSOtoHzaBdGAxUKrulmb9ZTx4I3UncCgqw0HtX+DJhrL16MKHQYU1LSpqaBoyp2isWclumLjU8ULRI66UWdPRkLcYeCAek0cQ3xD+voMfwMqg4hOtoeGeZglO8qLLJq3zliTsOluKX20g1AscpBS9G9TguJWNv6I7KxxY76Ih2JcwraZpMj0ej4vZkRAcZHq7/doQcRRFGvPWklc+dp6A3e57myS5yF/G/KyZ10j+GdJeJP+43BNxz/4R9/CBzkx7kiRvcT+Mu3RFH9tBW3f8v9P+GCLbX3B9bgRy6YjIfcA+jP/2obChAEh+CK2N/RkkPGO7P88wCj43BgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e7007ab047a24350d4a3eb02d16d4303"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e7007ab047a24350d4a3eb02d16d4303"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e7007ab047a24350d4a3eb02d16d4303</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 16:37:31</sys_created_on>
+        <sys_id>24e0f63447a24350d4a3eb02d16d43b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 16:37:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e7007ab047a24350d4a3eb02d16d4303</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 16:37:31</sys_created_on>
+        <sys_id>a0e0f63447a24350d4a3eb02d16d43d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 16:37:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e7007ab047a24350d4a3eb02d16d4303</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 16:37:31</sys_created_on>
+        <sys_id>a4e0f63447a24350d4a3eb02d16d43c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 16:37:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e7007ab047a24350d4a3eb02d16d4303"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e7007ab047a24350d4a3eb02d16d4303"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automate the placement status</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>automate_student_placement</internal_name>
+        <label_cache>[{"name":"Updated_1.current.applying_student","label":"Trigger - Record Updated➛Placement Application Record➛Applying Student","reference":"x_2184285_campus_p_student_profile","reference_display":"Student Profile","type":"reference","base_type":"reference","parent_table_name":"x_2184285_campus_p_placement_application","column_name":"applying_student","usedInstances":{"ca8f9958-6b8a-46cf-b75b-3b676f8782dd":["record"],"6e27cd8c-3720-44a5-b41a-f8242154fb46":["record"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Placement Application Record","reference":"x_2184285_campus_p_placement_application","reference_display":"Placement Application","type":"reference","base_type":"reference","usedInstances":{"1030f242-90f8-47aa-984e-b0af82eae09f":["record"],"6e27cd8c-3720-44a5-b41a-f8242154fb46":["record"]},"attributes":{}},{"name":"Updated_1.current.state","label":"Trigger - Record Updated➛Placement Application Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_2184285_campus_p_placement_application","column_name":"state","choices":[{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"Pending"}},"sequence":-5.0,"label":"Pending","used":false,"image":"","selected":false,"rawLabel":"Pending","missing":false,"reference":false,"value":"-5"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"Open"}},"sequence":1.0,"label":"Open","used":false,"image":"","selected":false,"rawLabel":"Open","missing":false,"reference":false,"value":"1"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"Work in Progress"}},"sequence":2.0,"label":"Work in Progress","used":false,"image":"","selected":false,"rawLabel":"Work in Progress","missing":false,"reference":false,"value":"2"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"Closed Complete"}},"sequence":3.0,"label":"Closed Complete","used":false,"image":"","selected":false,"rawLabel":"Closed Complete","missing":false,"reference":false,"value":"3"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"Closed Incomplete"}},"sequence":4.0,"label":"Closed Incomplete","used":false,"image":"","selected":false,"rawLabel":"Closed Incomplete","missing":false,"reference":false,"value":"4"},{"parameters":{"name":"task","dependent_values":[""],"dependent_values_map":{"":"Closed Skipped"}},"sequence":5.0,"label":"Closed Skipped","used":false,"image":"","selected":false,"rawLabel":"Closed Skipped","missing":false,"reference":false,"value":"7"}],"usedInstances":{}}]</label_cache>
+        <master>true</master>
+        <name>Automate Student Placement</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Automate Student Placement">e7007ab047a24350d4a3eb02d16d4303</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 17:05:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3b27727047e24350d4a3eb02d16d438a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:04</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=3b27727047e24350d4a3eb02d16d438a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3b27727047e24350d4a3eb02d16d438a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3b27727047e24350d4a3eb02d16d438a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3b27727047e24350d4a3eb02d16d438a^sys_idNOT INbb27727047e24350d4a3eb02d16d438c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3b27727047e24350d4a3eb02d16d438a</id>
+        <name>Automate Student Placement</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 17:05:03</sys_created_on>
+        <sys_id>bb27727047e24350d4a3eb02d16d438c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 17:05:03</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=bb27727047e24350d4a3eb02d16d438c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3b27727047e24350d4a3eb02d16d438a^sys_idNOT IN3f27727047e24350d4a3eb02d16d439f,b727727047e24350d4a3eb02d16d438e,fb27727047e24350d4a3eb02d16d43b8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Automate Student Placement">3b27727047e24350d4a3eb02d16d438a</model>
+        <model_id>3b27727047e24350d4a3eb02d16d438a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3b27727047e24350d4a3eb02d16d438a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 17:05:03</sys_created_on>
+        <sys_id>3f27727047e24350d4a3eb02d16d439f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3f27727047e24350d4a3eb02d16d439f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Automate Student Placement">3b27727047e24350d4a3eb02d16d438a</model>
+        <model_id>3b27727047e24350d4a3eb02d16d438a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3b27727047e24350d4a3eb02d16d438a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 17:05:03</sys_created_on>
+        <sys_id>b727727047e24350d4a3eb02d16d438e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b727727047e24350d4a3eb02d16d438e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Automate Student Placement">3b27727047e24350d4a3eb02d16d438a</model>
+        <model_id>3b27727047e24350d4a3eb02d16d438a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3b27727047e24350d4a3eb02d16d438a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 17:05:03</sys_created_on>
+        <sys_id>fb27727047e24350d4a3eb02d16d43b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fb27727047e24350d4a3eb02d16d43b8"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3b27727047e24350d4a3eb02d16d438a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3b27727047e24350d4a3eb02d16d438a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3b27727047e24350d4a3eb02d16d438a^sys_idNOT IN7727727047e24350d4a3eb02d16d43db"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Automate Student Placement">3b27727047e24350d4a3eb02d16d438a</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 17:05:04</sys_created_on>
+        <sys_id>7727727047e24350d4a3eb02d16d43db</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:03</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3b27727047e24350d4a3eb02d16d438a^sys_idNOT IN2ec2e3c1472ac350d4a3eb02d16d4307,a6c2e3c1472ac350d4a3eb02d16d4308"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Automate Student Placement">3b27727047e24350d4a3eb02d16d438a</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>50b0e279-96c7-4773-aba0-815d68310441</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 14:54:03</sys_created_on>
+        <sys_id>2ec2e3c1472ac350d4a3eb02d16d4307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:03</sys_updated_on>
+        <ui_id>ca8f9958-6b8a-46cf-b75b-3b676f8782dd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy2rjMBT9laC1MbaThjS70lAY6LTQzmTTKUaRrlOB/Bg92mSC/32uLNkJbaek0E2YrKL70D3n+B77YUcEJ3MyAZ6k5+mUjdPxOEuSbDZJV9PxKs34mAKkJCIVLQErFbBacTw/U2ldYLf72XBqgOdpzKxSUJmYNo3cimqda2M5BtoWG7jQjaTbZejDCHsSkmMDmT88RqShCkcYUGS+e5U6FqOkK5BYeteDfA3abBt35jWzJeLKRR+8Dp2LkBl9W2AGmxycNIkIbAxUHBBIQaWGiJS0Qtq12pK5URYDCii/reR2qHgSlfFES7rR4g9OniSurgBkxoIIwzEPAvlwsaCG3uPNzFg16FULBtprwqGgVprLw5gvuG2MqCvfYuhK9t21tGV14xUhwwUHz8NqBAGN4+mQe1rF/VP9cteDvBJVJ0mgKGtG5XCixiixssbB2RGQ0Glc4ja4XWhU/Sy6ZoRSxmuJh7iQ9QvO1GJdxZQ53DGqSuMrjC+68JIq4Uh8x2uwuY2I3upLSbXeU0EN89/WIfHEAoW8U6GTIO82wTUzJRpzgaOeYQDugw502BT8905h27ZRMMzq7KNlZOf73TsYvzfNJs/S2SSbneWMlo3VedNbxclUCAlvDXMRTDW695WfNtARmHsD/ejW5n0OwUNvYteHvaMbnwgOOvsyB81OyUGBxslb6B/GGdyQZB++mg82qTOAPnACPi/mSWpDjdW/bJKMuduHtw74sPZzXjgCce+FKwGS63co9EaAEoEZyD2lV2YIydEyJIdPypc5Ip0m3e+EfPG/fFnax7+rvafRYQkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2ec2e3c1472ac350d4a3eb02d16d4307"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Automate Student Placement">3b27727047e24350d4a3eb02d16d438a</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>9b4b4ba0-e11b-4a5b-807f-b7a54cb86f4e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 14:54:03</sys_created_on>
+        <sys_id>a6c2e3c1472ac350d4a3eb02d16d4308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:03</sys_updated_on>
+        <ui_id>6e27cd8c-3720-44a5-b41a-f8242154fb46</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXWviQBT9KzLPEhKjYn0rFWGh20Ld9aVbwjhzowOTj50Pa1b873snmahocS30RTZv92vmnJN7ktctEZyMSR94GN1FQxZHcdwLw96oHy2G8SLq8ZgCRKRLcpoBdipgheIYr6m0LrHd/iw5NcCTKGBWKchNQMtSViJfJtpYjondDge40KWk1dzPYYathOQ4QMavb11SUoVXGFBkvD0pXYtR0gVIbH1pQZ6CNlXpYl4wmyGuRLTJRz858ZXOtwlWcMjBicIugY2BnAMCSanU0CUZzZF2oSoyNspiQgHlz7ms9h0rkZuGaEY3WvzBm/uh60sBmTEvwj5MvEBNOp1QQ2d4MjNW7fUqBAPdaMIhpVaah+Nc0/BcGlHkzYihC9lOF9Jm+VOjCNkfcPQ+rEYQUDqeDnlDK52tiveXFuRU5LUknqIsGJX7iBqjxMIaB2dLQEKtcYbb4HahVMVa1MMIJQuWEoMglcU73qnFMg8oc7gDVJUGU8xP6vScKuFIfMdjcHjXJbrSD5JqfaCCGia/rUPSEPMUklqFWoKk3gQ3zJQozT1etQYPfNf1LlgMLm0Yuzss1NGZBydskl406vdGg4TRrLQ6Kdv9d9xTIeHcBffeKZ1Z0/lpV1yBuXXFj3oXPubgjXGWezye7Tw1BW+LwZfZYnRLtvA0bt4X/3JD2Lv4vT3apNoA+sgJ+L5YQ1Ibaqz+ZcMw5vXx5xa43Pw5N1yBuXXDVIDk+gMSrRUgQ2QGkobUiR18sTP3xf2f4ss8EQ3D+rkhZ/w3P4y3v/b7EFw4CQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a6c2e3c1472ac350d4a3eb02d16d4308"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3b27727047e24350d4a3eb02d16d438a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3b27727047e24350d4a3eb02d16d438a^sys_idNOT IN6ac2e3c1472ac350d4a3eb02d16d4309,6ec2e3c1472ac350d4a3eb02d16d430b"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dec2a3c1472ac350d4a3eb02d16d4380</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Automate Student Placement">3b27727047e24350d4a3eb02d16d438a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 14:54:03</sys_created_on>
+        <sys_id>6ac2e3c1472ac350d4a3eb02d16d4309</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:04</sys_updated_on>
+        <ui_id>50b0e279-96c7-4773-aba0-815d68310441</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9FYNnQdASG41vgYMABdIGaNJc2kAYkZTNliJVLnZcwf/eoRbbaBzUQXvszXyzvfc0A7dEe9d4Zx/0lbViqcj8y1NEhAoY/m6JYGROqgSq9JKmNM9meZYk2buLtJzlZZqxHDjkJCIKao6ZVCsmnNCq6ICIrEH6EJiIavJNlxNdVdxwhhEmbCNh+/hqAl0JyQwfODVgsKPjhszb30LncpRQcompi5Hk5LZDXmfvtk3ArTNCLYf37dDlfgS1YYFVmkSEPzuuGLKfVyAtj0gNioHTZrtHDAd2p+QBWAnlsB0Jyc9W/MSB2XQaEoMRivI+uH8Wg3E9XF2DA6TiqfNmSKUrLSi3vTmMV+ClWxxjfcJdE6T2JQ5KOVZr6Wv1sXeE7BuM3wkRb5EEb4LSQH3QUd2v9ObTyPJGqM6VISg1Bbl/gUPvSu8Cn5ZwyWtsVNTQNOho0Ri9Fl0xcqnjpcRHXEm9waFhR2OggXiMxkJ8g/h1Bz+CEUHFB2yDxT3NEqygRbfP2A5t4mQXEbu1CwnWHkSiu8UPHyj2kgdxRe9PKKFGNO4KJ6/5oGMXDedxCdNqmibT06t3MTuxYEeX0bafG5TCWZHG1Bt0z8XWIbDbffVJkrP85bGcVfO2+zlDxIv7OS3sLUeT/eFowhc782aSJPl/NH99NMIW/aoP2rrh//BmnsLi9zP3XlNhkdpDwN6P/zwhsMXlEvQY2mjzPYg6YLtfj0To28MGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">52c2a3c1472ac350d4a3eb02d16d4385</block>
+        <comment/>
+        <connected_to>50b0e279-96c7-4773-aba0-815d68310441</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Automate Student Placement">3b27727047e24350d4a3eb02d16d438a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 14:54:03</sys_created_on>
+        <sys_id>6ec2e3c1472ac350d4a3eb02d16d430b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:04</sys_updated_on>
+        <ui_id>9b4b4ba0-e11b-4a5b-807f-b7a54cb86f4e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3b27727047e24350d4a3eb02d16d438a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3b27727047e24350d4a3eb02d16d438a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3b27727047e24350d4a3eb02d16d438a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 17:05:03</sys_created_on>
+        <sys_id>3327727047e24350d4a3eb02d16d43b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 17:05:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3b27727047e24350d4a3eb02d16d438a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 17:05:03</sys_created_on>
+        <sys_id>3b27727047e24350d4a3eb02d16d43cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 17:05:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3b27727047e24350d4a3eb02d16d438a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 17:05:03</sys_created_on>
+        <sys_id>7327727047e24350d4a3eb02d16d439b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 17:05:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3b27727047e24350d4a3eb02d16d438a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3b27727047e24350d4a3eb02d16d438a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>e7007ab047a24350d4a3eb02d16d4303</sys_id>
+        <latest_snapshot>3b27727047e24350d4a3eb02d16d438a</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e7007ab047a24350d4a3eb02d16d4303^sys_idNOT INc837727047e24350d4a3eb02d16d43e9"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"c837727047e24350d4a3eb02d16d43e9","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>e7007ab047a24350d4a3eb02d16d4303</plan_id>
+        <snapshot>6bd2a7c1472ac350d4a3eb02d16d437e</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 17:05:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c837727047e24350d4a3eb02d16d43e9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 14:54:05</sys_updated_on>
+        <trigger display_value="">87c2e3c1472ac350d4a3eb02d16d43b7</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e7007ab047a24350d4a3eb02d16d4303"/>
+</record_update>

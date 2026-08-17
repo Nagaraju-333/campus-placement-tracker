@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 07:34:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7f54343847a20350d4a3eb02d16d4355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Student Profiles</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name>sys_app_application_7f54343847a20350d4a3eb02d16d4355</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 07:34:05</sys_updated_on>
+        <title>Student Profiles</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</application>
+        <file_path/>
+        <instance_id>29dd790ffb994f941feef633beefdc37</instance_id>
+        <instance_name>dev402520</instance_name>
+        <name>sys_app_application_7f54343847a20350d4a3eb02d16d4355</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name/><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-04 07:34:05</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7f54343847a20350d4a3eb02d16d4355</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Student Profiles</sys_name><sys_overrides/><sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package><sys_policy/><sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope><sys_update_name>sys_app_application_7f54343847a20350d4a3eb02d16d4355</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-04 07:34:05</sys_updated_on><title>Student Profiles</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>-1561880485</payload_hash>
+        <record_name>Student Profiles</record_name>
+        <reverted_from/>
+        <source>fe892f20476acf10d4a3eb02d16d431e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 07:34:05</sys_created_on>
+        <sys_id>4484b47c47a20350d4a3eb02d16d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fcbb1a98e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 07:34:05</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>0484b47c88a203507fe58d055e01476a</update_guid>
+        <update_guid_history>0484b47c88a203507fe58d055e01476a:-1561880485</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Student Profiles">ca0538bc47a20350d4a3eb02d16d4314</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-04 07:36:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>70afb977f36e4efebc9c1368e7f0ff04</sys_id>
+        <sys_metadata>7f54343847a20350d4a3eb02d16d4355</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Student Profiles</sys_name>
+        <sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_scope_delete display_value="">63e74e5002e34b38b361c42201304440</sys_scope_delete>
+        <sys_update_name>sys_app_application_7f54343847a20350d4a3eb02d16d4355</sys_update_name>
+        <sys_update_version display_value="sys_app_application_7f54343847a20350d4a3eb02d16d4355">4484b47c47a20350d4a3eb02d16d436b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-04 07:36:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

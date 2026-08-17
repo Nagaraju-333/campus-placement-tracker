@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Placement enrollment">02a9f30547eac350d4a3eb02d16d43c4</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 16:53:18</sys_created_on>
+        <sys_id>951eff4d47eac350d4a3eb02d16d43be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Placement enrollment</sys_name>
+        <sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_951eff4d47eac350d4a3eb02d16d43be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 16:53:18</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</application>
+        <file_path/>
+        <instance_id>29dd790ffb994f941feef633beefdc37</instance_id>
+        <instance_name>dev402520</instance_name>
+        <name>sc_cat_item_catalog_951eff4d47eac350d4a3eb02d16d43be</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Placement enrollment">02a9f30547eac350d4a3eb02d16d43c4</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-08-05 16:53:18</sys_created_on><sys_id>951eff4d47eac350d4a3eb02d16d43be</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Placement enrollment</sys_name><sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package><sys_policy/><sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope><sys_update_name>sc_cat_item_catalog_951eff4d47eac350d4a3eb02d16d43be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-08-05 16:53:18</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-1324453471</payload_hash>
+        <record_name>Service Catalog.Placement enrollment</record_name>
+        <reverted_from/>
+        <source>fe892f20476acf10d4a3eb02d16d431e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 16:53:18</sys_created_on>
+        <sys_id>151eff4d47eac350d4a3eb02d16d43d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19fd2d7fe3c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 16:53:18</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>dd1eff4d47eac35098ae9c52802c1dd4</update_guid>
+        <update_guid_history>dd1eff4d47eac35098ae9c52802c1dd4:-1324453471</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Placement enrollment">df1e738d47eac350d4a3eb02d16d435b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-05 16:53:25</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>07da716f31244c2a92c45f82b281a784</sys_id>
+        <sys_metadata>951eff4d47eac350d4a3eb02d16d43be</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Placement enrollment</sys_name>
+        <sys_package display_value="Campus Placement Tracker" source="x_2184285_campus_p">95c86fac472acf10d4a3eb02d16d4331</sys_package>
+        <sys_parent display_value="Placement enrollment">02a9f30547eac350d4a3eb02d16d43c4</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Campus Placement Tracker">95c86fac472acf10d4a3eb02d16d4331</sys_scope>
+        <sys_scope_delete display_value="">63e74e5002e34b38b361c42201304440</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_951eff4d47eac350d4a3eb02d16d43be</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_951eff4d47eac350d4a3eb02d16d43be">151eff4d47eac350d4a3eb02d16d43d6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-05 16:53:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

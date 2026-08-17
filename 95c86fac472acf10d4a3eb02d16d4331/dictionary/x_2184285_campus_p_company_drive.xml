@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="549b6f24476acf10d4a3eb02d16d4383" label="Company Drive" max_length="40" name="x_2184285_campus_p_company_drive" type="collection">
+        <element label="Minimum CGPA" max_length="38" name="minimum_cgpa" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Ongoing" sequence="1" value="ongoing"/>
+                <element inactive_on_update="false" label="Upcoming" sequence="0" value="upcoming"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
+            </choice>
+        </element>
+        <element label="Drive date" max_length="255" name="drive_date" type="glide_date"/>
+        <element display="true" label="Company name" max_length="40" name="company_name" type="string"/>
+        <element label="Roles Offered" max_length="100" name="roles_offered" type="string"/>
+    </element>
+</database>
